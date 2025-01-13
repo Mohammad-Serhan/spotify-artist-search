@@ -1,75 +1,92 @@
-# Getting Started with Create React App
+# Spotify Artist Search Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This project is a basic Spotify application that allows users to search for an artist and retrieve information about their albums. The app integrates with the **Spotify API** to fetch real-time data and provides a seamless user experience for music discovery.
 
-## First clone the app by excuting the following command: 
-`git clone https://github.com/Mohamad04/spotify-artist-search.git`
+---
 
-## cd to spotify-artist-search directory 
-then
-## install dependencies using:
-`npm install`
+## Product Specification
 
-then 
-#### `npm run start`
+### A. Landing Page - Login With Spotify
+1. The landing page contains a **“Login with Spotify”** button.
+2. Clicking the button starts the **Spotify Implicit Grant authentication flow**.
+3. Upon successful authentication, the user is redirected to the **“Artist Search”** page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### B. Artist Search
+1. The page includes a search input with placeholder text: **“Search for an artist...”**.
+2. When pressing the **Return** key, the user sees the search results.
+   - **Spotify artist search API**:  
+     [Get Search Item](https://developer.spotify.com/console/get-search-item)
+3. **Bonus**: Implements a **“search-as-you-type”** functionality.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### C. Browsing Artists
+1. Displays the results from the **Artist Search**.
+2. Results follow these specifications:
+   - Keeps the **Spotify API ordering**.
+   - Displays an **artist image**.
+   - Shows the artist's **popularity** as a star rating (1-5 stars).
+   - Displays the **number of followers**.
+   - Results are clickable to retrieve the artist’s albums.
 
-### `npm test`
+### D. Browsing Artist Albums
+1. Displays albums for the selected artist.
+   - **Spotify artist album search API**:  
+     [Get Artist Albums](https://developer.spotify.com/console/get-artist-albums/)
+2. Album results include:
+   - **Album cover image**.
+   - **Album name**.
+   - **List of artists** featured on the album.
+   - **Release year** of the album.
+   - **Total number of tracks**.
+   - A clickable link to open the **Spotify album preview** in a new tab.  
+     *(Hint: Use the `external_urls` parameter from the API results.)*
+3. Clicking the browser's **Back** button returns to the previous search results.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Technical Specifications
+- **Single-Page Application** built with **React**.
+- **Create React App** used as the project starter.
+- A **CSS framework** or **React UI library** is used for design.
+- Fully **responsive** and adapts seamlessly to different devices.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Things We Will Be Looking For
+- The application meets the **product specifications** and works as expected.
+- Demonstrates strong knowledge of the **React API** and its core concepts.
+- Has a **clean and consistent UI**.
+- Provides a **simple and intuitive user experience (UX)**.
+- Clear explanation of technical choices and codebase.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Deliverables
+1. A public GitHub repository with:
+   - Source code for the application.
+   - Instructions to build and run the project.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
+- Node.js and npm installed on your machine.
+- A Spotify Developer account to generate the required API credentials.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/spotify-artist-search.git
+   cd spotify-artist-search
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Install dependencies:
+  `npm install`
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Running the Application
+1. Start the development server
+   `npm start`.
+2. Open your browser and navigate to `http://localhost:3000`.

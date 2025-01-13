@@ -3,11 +3,9 @@ import { loginApi } from "../api";
 
 const LogIn = () => {
 
-
-
   const handleUser = async () => {
     try {
-      console.log("clicked");
+    //   console.log("clicked");
        await loginApi();
     } catch (error) {
       console.log(error);
