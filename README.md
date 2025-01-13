@@ -42,37 +42,12 @@ This project is a basic Spotify application that allows users to search for an a
      *(Hint: Use the `external_urls` parameter from the API results.)*
 3. Clicking the browser's **Back** button returns to the previous search results.
 
----
-
-## Technical Specifications
-- **Single-Page Application** built with **React**.
-- **Create React App** used as the project starter.
-- A **CSS framework** or **React UI library** is used for design.
-- Fully **responsive** and adapts seamlessly to different devices.
 
 ---
 
-## Things We Will Be Looking For
-- The application meets the **product specifications** and works as expected.
-- Demonstrates strong knowledge of the **React API** and its core concepts.
-- Has a **clean and consistent UI**.
-- Provides a **simple and intuitive user experience (UX)**.
-- Clear explanation of technical choices and codebase.
-
----
-
-## Deliverables
-1. A public GitHub repository with:
-   - Source code for the application.
-   - Instructions to build and run the project.
-
----
 
 ## Getting Started
 
-### Prerequisites
-- Node.js and npm installed on your machine.
-- A Spotify Developer account to generate the required API credentials.
 
 ### Installation
 1. Clone the repository:
@@ -80,8 +55,6 @@ This project is a basic Spotify application that allows users to search for an a
    git clone https://github.com/your-username/spotify-artist-search.git
    cd spotify-artist-search
 
-
----
 
 ### Install dependencies:
   `npm install`
